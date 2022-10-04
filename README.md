@@ -28,9 +28,9 @@ HNSYU（适用于OpenWrt路由的Shell脚本）实现用路由器连接校园网
    ![winscp登录](https://s1.ax1x.com/2022/10/04/xlpG5R.png)
    ![上传.sh](https://s1.ax1x.com/2022/10/04/xlpwrD.png)
    
-   打开目录```/etc/config/```打开文件```network```编辑```config device 'wan_eth0_2_dev'```和```config interface 'wan'```下```option macaddr 'F8:75:A4:3D:69:25'```把``里的内容换成刚才电脑的mac编辑并保存  
-   ![修改mac1](https://s1.ax1x.com/2022/10/04/xl9MWt.png)
-   ![修改mac2](https://s1.ax1x.com/2022/10/04/xl91Qf.png)
+   打开目录```/etc/config/```打开文件```network```编辑```config device 'wan_eth0_2_dev'```和```config interface 'wan'```下```option macaddr 'F8:75:A4:3D:69:25'```把里面的内容换成刚才电脑的mac编辑并保存  
+   ![修改mac1](https://s1.ax1x.com/2022/10/04/xl9MWt.png)  
+   ![修改mac2](https://s1.ax1x.com/2022/10/04/xl91Qf.png)  
    ![电脑mac](https://s1.ax1x.com/2022/10/04/xl9YwQ.png)  
 注意电脑mac地址用```-```连接需要用```:```替换。  
 重启路由器后进入后台管理页面点开```网络-->接口``` 看到mac地址已经和电脑是一样就算成功了。
