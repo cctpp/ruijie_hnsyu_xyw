@@ -11,7 +11,7 @@ HNSYU（适用于OpenWrt路由的Shell脚本）实现用路由器连接校园网
 5. [WinSCP](https://winscp.net/eng/docs/lang:chs)软件；用于上传脚本
 6. [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/)软件
 ## 开始
-1. 编译带有```UA2F```插件的对应路由器型号的固件。一般使用[云编译](https://github.com/cctpp/Actions-lede-UA2F)(本地编译报错太多)
+1. 编译带有```UA2F```插件的对应路由器型号的固件。一般使用[云编译](https://github.com/MoorCorPa/Actions-lede-UA2F)(本地编译报错太多)
 2. 刷入OpenWrt固件,需要用到```breed Web```(一般在网上买的都已经刷好了)按住RESET键再插电，路由器灯闪烁再松开按键然后用电脑网线接路由器lan口接着浏览器访问 ```192.168.1.1```刷入即可。刷好后路由器后台地址默认为```192.168.1.1``` 用户名 ```root``` 密码 ```password```
    ![breed web](https://s1.ax1x.com/2022/10/04/xlpfsS.png)
    ![后台管理地址](https://s1.ax1x.com/2022/10/04/xlp7in.png)
