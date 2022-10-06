@@ -1,5 +1,9 @@
-# ruijie_hnsyu_xyw
+# ruijie_hnsyu_xyw  
+## 新方案  (基于无感认证)
+只需PC端勾选**记住密码**登录一次校园网，并记住```pc的网卡MAC```，把```路由器WAN口MAC```修改成```pc的MAC```。
+然后用路由器WAN口连接AP面板就能愉快的上网啦。(前提是路由器支持**重设MAC地址**并且能正常**获取到ip地址**)  
 
+## 方案1(已弃用）
 HNSYU（适用于OpenWrt路由的Shell脚本）实现用路由器连接校园网的项目，实现多设备上网。  
 原来的校园网支持PPPOE拨号，检测网络共享也不算很严，随便接个由器接上就能用。今年校园网进行全光改造，认证方式也改成网页认证。  
 然后关于防检测的可以参考 [这里](https://www.sunbk201.site/posts/crack-campus-network.html)本文不再赘述
@@ -99,7 +103,8 @@ iptables -t mangle -A POSTROUTING -j TTL --ttl-set 64
    service ua2f enable
    ```
 4. 重启路由器后访问[http://ua.233996.xyz/](http://ua.233996.xyz/)如果出现下图就算成功了
-   ![防止检测成功图](https://s1.ax1x.com/2022/10/04/xlCRHg.png)
+   ![防止检测成功图](https://s1.ax1x.com/2022/10/04/xlCRHg.png)  
+
 ## 结束
 如有错误之处欢迎指出  
 本文所有文件 均来自网络 ,感谢以下大佬的无私奉献。  
